@@ -8,7 +8,6 @@ html {
 body,
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -22,6 +21,7 @@ h6 {
     background: rgba(192, 192, 192, 0.9);
 
 }
+
 .topnav ul.navbar-nav li a {
 background: rgba(28, 28, 28, 0.1);
 color: #000;
@@ -82,8 +82,11 @@ color: #000;
 }
 /*small header*/
 .intro-message > h3 {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  color: black;
+    text-align: center;
+  color: green;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:5em;
+  text-shadow: 2px 1px 2px #000;
 }
 
 @media(max-width:767px) {
@@ -183,3 +186,33 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+ .philpic{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-left: 65em;
+
+ }
+ .about{
+  text-align: center;
+
+  margin-left: 55em;
+  margin-right: 55em;
+  padding-bottom: 5%;
+  background: url("https://hd.unsplash.com/photo-1457274858420-ea606e99cc5c");
+
+ }
+ #me{
+  text-align: center;
+  color: white;
+  background: gray;
+ }
+ 
+ .skill{
+  margin-top: 2%;
+  margin-bottom: 5%;
+ }
+ 
+ .end{
+  margin-top: 15em;
+ }
