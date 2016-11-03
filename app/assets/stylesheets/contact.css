@@ -1,0 +1,23 @@
+.wrp{
+	text-align:center;
+	color:orange;
+	font-family:impact;
+	font-size:6em;
+	margin-bottom: 3.5em;
+}
+.col{
+	background-color: white;
+	border: solid;
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-right: 4em;
+
+}
+
+.wrp1{
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
+}
