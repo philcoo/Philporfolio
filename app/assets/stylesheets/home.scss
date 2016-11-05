@@ -50,16 +50,16 @@ color: #000;
 }
 /*top background*/
 .intro-header { 
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px; 
     padding-bottom: 50px;
     text-align: center;
     background: url('https://hd.unsplash.com/photo-1462826303086-329426d1aef5') no-repeat center center fixed;
     background-size: cover;
-    height: 855px;
+    height: 100%;
 }
 .bg-overlay {
   background:rgba(0,0,0, 0.3);
-  height: 855px;
+  height: 100%;
 }
 
 .intro-message {
@@ -75,18 +75,13 @@ color: #000;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-/*small header*/
+
 .intro-message > h3 {
     text-align: center;
   color: green;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size:5em;
-  text-shadow: 2px 1px 2px #000;
+  font-size:5.5em;
+  text-shadow: 3px 1px 3px #000;
 }
 
 @media(max-width:767px) {
@@ -113,11 +108,7 @@ color: #000;
     }
 }
 /*line*/
-hr.intro-divider {
-  border: 1px outset rgba(255, 255, 255, 0.2);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  width: 100%;
-}
+
 /* social buttons */
 .btn {
   display: inline-block;
@@ -149,9 +140,9 @@ hr.intro-divider {
     height: 855px;
 }
 .bg-overlay2 {
-  margin-top: -50px;
+  margin-top: -220px;
   background: rgba(255, 255, 255, 0.2);
-  height: 855px;
+  height: 945px;
 }
   /*self-taught*/
 .container .link {
@@ -168,14 +159,11 @@ h2.section-heading {
 
   /*text*/
  .content-section-a p {
-    font-size: 22px;
+    font-size: 25px;
+
    font-weight: bold;
     color: #000;
   }
-.content-section-a p a {
-  color: silver;
-  font-weight: bold;
-}
 
 
 footer {
@@ -226,14 +214,19 @@ p.copyright {
  }
  
  .skill {
-  margin-top: 4.6em;
+  margin-top: 5.2em;
   margin-bottom: 5%;
-  color: green;
+
   margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
  }
 .skill p{
-  color: green;
-  margin-left: 2em;
+  color: #FFA54F;
+  padding-bottom:20px;
+  margin-left: 1em;
+  margin-top: 3em;
 }
  
  .end{
