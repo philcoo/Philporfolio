@@ -1,0 +1,544 @@
+/* Base Styles */
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #222;
+	background: url("https://images.unsplash.com/photo-1474232935865-0a9bddb59803?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=fc02ce644579505e2a4261b153e2ef4a");
+	font-family: 'Lato', sans-serif;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 3px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Grid */
+
+.section {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+
+header{
+	max-width: 100%;
+	background: #222; /*FallBack*/
+	background: rgba(0,0,0,.6);
+	padding: 20px;
+}
+
+nav{
+	width: 100%;
+	margin-bottom: 1em;
+	background: #323232;
+	font-family: 'Poiret One', cursive;
+}
+
+.logo{
+	text-align: center;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 400;
+	font-family: 'Poiret One', cursive;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+
+.nav-item{
+	display: inline-block;
+	padding: 20px;
+	font-size: 1.4em;
+	-webkit-transition: background .5s;
+	transition: background .5s
+}
+
+.nav-item:hover{
+	background: #474747;
+	cursor: pointer;
+}
+
+.menu-bar{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+	background: #2d2d2d;
+	text-align: left;
+	padding: 15px 20px;
+	color: #fff;
+	font-size: 1.4em;
+	cursor: pointer;
+	display: none;
+}
+
+.hamburger-icon{
+	float: right;
+	clear: both;
+	margin-top: -5px;
+	font-size: 1.4em;
+}
+
+
+.container{
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.blog-post{
+	background: #fff;
+	margin: 0 auto 2em auto;
+	padding: 35px 30px;
+	box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+}
+
+.side-post{
+	background: #fff;
+	margin: 0 auto 1.5em auto;
+	width: 15em;
+	padding: 20px;
+}
+
+.blog-content{
+	font-size: 1em;
+	border-left: 5px solid #8EE5EE;
+	padding-left: 15px;
+}
+
+.side-content{
+	font-size: .9em;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.blog-title{
+	font-size: 2.5em;
+	margin-top: 5px;
+}
+
+.date{
+	font-size: 1em;
+	font-weight: 400;
+	color: #9C9C9C;
+	margin-top: -10px;
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+}
+
+.post-link{
+	color: #009ACD;
+	font-style: italic;
+	transition: all 0.4s;
+}
+
+
+
+.button{
+	display: block;
+	padding: 15px 20px;
+	margin-top: .8em;
+	background: #009ACD;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4em;
+	border-radius: 3px;
+	transition: all .4s ease-in;
+}
+
+.button:hover{
+	background: #005c7b;
+}
+
+/*Media Queries*/
+
+/* @900px*/
+@media only screen and (max-width: 56.25em) {
+	.col{ margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3{ width: 100%; }
+	.side-post{ width: 42%;
+			   float: left;
+			   margin: -2% 0 1% 1.6%;}
+}
+
+/* @685px*/
+@media only screen and (max-width: 42.813em) {
+	.side-post{ width: auto;
+				padding: 15px;
+			    margin: -2% auto 8% auto; }
+	.blog-title{ font-size: 1.95em; }
+	.date{ font-size: .9em; }		
+}
+
+/* @480px */
+@media only screen and (max-width: 30em){
+	nav ul{ max-height: 0; }
+	.reveal{ max-height:19em; }
+	nav ul .nav-item{ -webkit-box-sizing: border-box;
+		 			  -moz-box-sizing: border-box;
+     				  -ms-box-sizing: border-box;
+        			  box-sizing: border-box;
+					  width:100%;
+		 			  padding: 15px; }
+	
+	.menu-bar{ display: block; }
+
+}
+
+/* @380px*/
+@media only screen and (max-width: 23.75em) {
+	.blog-content, .post-link{ font-size: .9em; }
+	.side-content{ font-size: .8em; }
+	.button{ padding: 10px 15px; }
+	.nav-item{ font-size: 1.2em; }
+}
+.wrp{
+	text-align:center;
+	color:orange;
+	font-family:impact;
+	font-size:6em;
+	margin-bottom: 3.5em;
+}
+.col{
+	background-color: white;
+	border: solid;
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-right: 4em;
+
+}
+
+.wrp1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+/* line 1, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+body,
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+/* line 18, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.topnav {
+  font-size: 16px;
+  border-bottom: 1px outset rgba(192, 192, 192, 0.5);
+  background: rgba(192, 192, 192, 0.9);
+}
+
+/* line 25, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.topnav ul.navbar-nav li a {
+  background: rgba(28, 28, 28, 0.1);
+  color: #000;
+}
+
+/* line 29, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.topnav ul.navbar-nav li a:hover,
+.topnav ul.navbar-nav li a:focus {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
+/* line 36, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.topnav .navbar-brand {
+  background: rgba(28, 28, 28, 0);
+  color: #000;
+}
+
+/* line 41, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.topnav .navbar-brand:hover,
+.topnav .navbar-brand:focus {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
+/* line 47, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*top background*/
+/* line 52, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url("https://hd.unsplash.com/photo-1462826303086-329426d1aef5") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+/* line 60, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+/* line 65, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/*Big header*/
+/* line 71, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.intro-message > h1 {
+  margin-top: -50px;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 79, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.intro-message > h3 {
+  text-align: center;
+  color: green;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 5.5em;
+  text-shadow: 3px 1px 3px #000;
+}
+
+@media (max-width: 767px) {
+  /* line 88, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  /* line 92, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  /* line 96, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  /* line 102, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 106, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+  .intro-divider {
+    width: 100%;
+  }
+}
+/*line*/
+/* line 113, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.btn {
+  display: inline-block;
+  color: #000;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: #C0C0C0;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+/* line 124, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.btn:hover {
+  color: #fff;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/*section 2*/
+/* line 136, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.content-section-a {
+  padding: 50px 0;
+  background: url("back2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+}
+
+/* line 142, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.bg-overlay2 {
+  margin-top: -220px;
+  background: rgba(255, 255, 255, 0.2);
+  height: 945px;
+}
+
+/*self-taught*/
+/* line 148, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.container .link {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* line 154, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+h2.section-heading {
+  margin-top: 100px;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/*text*/
+/* line 161, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.content-section-a p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* line 169, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+footer {
+  padding: 50px 0;
+  background: rgba(192, 192, 192, 0.9);
+}
+
+/* line 174, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+p.copyright {
+  margin: 15px 0 0;
+}
+
+/* line 177, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.philpic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 65em;
+}
+
+/* line 184, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+h5 {
+  color: orange;
+  font-family: fantasy;
+}
+
+/* line 189, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.note p {
+  color: green;
+  padding-left: 5.5px;
+}
+
+/* line 195, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+table {
+  justify-content: center;
+}
+
+/* line 203, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.about {
+  text-align: center;
+  margin-left: 55em;
+  margin-right: 55em;
+  padding-bottom: 5%;
+  background: url("https://hd.unsplash.com/photo-1457274858420-ea606e99cc5c");
+}
+
+/* line 212, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+#me {
+  text-align: center;
+  color: white;
+  background: gray;
+}
+
+/* line 218, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.skill {
+  margin-top: 5.2em;
+  margin-bottom: 5%;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 227, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.skill p {
+  color: #FFA54F;
+  padding-bottom: 20px;
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+/* line 234, /home/philco/aftermath/Philporfolio/app/assets/stylesheets/home.scss */
+.end {
+  margin-top: 15em;
+}
+.tbl{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* Zoom In #1 */
+
+.note{
+	background: white;
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
