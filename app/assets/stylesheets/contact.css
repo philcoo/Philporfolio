@@ -1,9 +1,9 @@
 .wrp{
 	text-align:center;
-	color:orange;
-	font-family:impact;
-	font-size:6em;
-	margin-bottom: 3.5em;
+	color:black;
+	font-family: 'Shrikhand', cursive;
+
+	margin-bottom: 2.5em;
 }
 .col{
 	background-color: white;
@@ -19,4 +19,9 @@
 	flex-direction: column;
 	justify-content: center;
 
+}
+
+.pro{
+	text-align:center; 
+	font-family: 'Abril Fatface', cursive;
 }
