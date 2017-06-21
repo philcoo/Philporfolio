@@ -13,7 +13,6 @@
 
 }
 .container{
-
 perspective: 800px;
 }
 #trans{
@@ -91,34 +90,10 @@ transform: rotateY(45deg);
 .fea-proj{
   margin-top: 265px;
 }
-
-@media(max-width:1200px) {
-    #graph{
-  text-align: center;
-}
-#graph3{
- width: 100%;
-  text-align: center;
-}
-#image{
-  width: 100%;
-}
-.intro-message{
-  
-  text-align: center;
-padding-top: 150px;
-  
-}
-.intro-message p{
-  text-align: center;
-  color: white;
-  font-size: 25px;
- margin-left: 20%;
- margin-right: 25%;
-  
-  background: gray;
-  opacity:0.6;
-}
+#col-mobile{
+  float: left;
+  margin-right: 10%;
+  display: inline-block;
 }
 
 
@@ -131,6 +106,14 @@ padding-top: 150px;
   text-align: center;
 }
 #graph p{
+  text-align: center;
+}
+#graph2{
+  padding-top:75px;
+  padding-left: 25px;
+  text-align: center;
+}
+#graph2 p{
   text-align: center;
 }
 #graph3{
@@ -168,8 +151,112 @@ padding-top: 150px;
 footer {
    background: black;
    height:250px;
+   color: white;
+   margin-top: 45px;
+   text-align: center;
+
+}
+footer a{
+   margin-right:25px;
 }
 
+
+
+@media(max-width: 1200px) {
+  .bg-overlay h1{
+  padding-left: 95px;
+  color:#043227;
+  font-size: 9em;
+  font-family: 'Abril Fatface', cursive;
+  }
+  .container{
+perspective: 1600px;
+}
+  .trans h1{
+    text-align: center;
+  }
+  .content-section-a{
+    width: 100% !important;
+    margin:5px, 0px, 5px, 0px;
+  }
+  .content-section-a {
+    
+    height: 2200px;
+  }
+
+  .col{
+    width: 100% !important;
+    margin:5px, 0px, 5px, 0px;
+  }
+  .fea-proj{
+   text-align: center;
+   padding-bottom: 55px;
+   background: white;
+  }
+  
+  .fea-proj col{
+   padding-bottom: 15px;
+  }
+
+
+ #graph{
+  text-align: center;
+  color: green;
+}
+#graph h4{
+ 
+  color: orange;
+  font-family: 'Abril Fatface', cursive; 
+  font-size: 55px;
+  padding-bottom: 2%;
+}
+#graph2{
+  text-align: center;
+  color: green;
+}
+#graph2 h4{
+  color: orange;
+  font-family: 'Abril Fatface', cursive; 
+  font-size: 55px;
+  padding-bottom: 2%;
+}
+#graph3{
+ width: 100%;
+  text-align: center;
+    color: green;
+}
+#graph3 h4{
+color: orange;
+font-family: 'Abril Fatface', cursive;
+font-size: 55px;
+padding-bottom: 2%; 
+}
+
+.intro-message{
+  text-align: center;
+padding-top: 180px;
+
+  
+}
+.intro-message h4{
+  color: red;
+font-size: 45px;
+padding-bottom: 25px;
+
+}
+.intro-message p{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+ margin-left: 20%;
+ margin-right: 25%;
+  background: gray;
+  opacity:0.6;
+}
+.trans{
+  margin-top: 100px;
+}
+}
 
 
 

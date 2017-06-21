@@ -1,0 +1,29 @@
+h5{
+	text-align: center;
+	padding-top: 45px;
+
+}
+.contact1{
+	margin-top: 5em;
+	 background: url('backgr2.jpg') no-repeat center center fixed;
+
+}
+.form{
+	margin-top: 85px;
+	background: black;
+	margin-right: 25%;
+	margin-left: 25%;
+
+}
+.form input{
+color: white;
+font-family: 'Abril Fatface', cursive;
+}
+.form textarea{
+	color: white;
+	height: 175px;
+}
+
+.form span{
+	background: none;
+}

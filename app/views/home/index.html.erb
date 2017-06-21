@@ -1,10 +1,4 @@
 
-
-<!-- Navigation -->
-
-
-
-
 <!-- intro-of philteck -->
 <nav>
   <div class="nav-wrapper">
@@ -49,8 +43,20 @@
 </div>
 
 <!--  about what we offer -->
+<div class="container">
+  <div class="row">
+    <div id="col-mobile">
+       <p>eget tincidunt lorem. Nam ultricies</p>
+    </div>
+    <div id="col-mobile">
+      <p>eget tincidunt lorem. Nam ultricies</p>
+    </div>
+    <div id="col-mobile">
+       <p>eget tincidunt lorem. Nam ultricies</p>
+    </div>
+  </div>
+</div>
 
-<a  name="about"></a>
 <div class="content-section-a">
   <div class="row">
     <div class="col s4">
@@ -63,7 +69,7 @@
       </div>
     </div>
     <div class="col s4">
-      <div id="graph">
+      <div id="graph2">
         <h4>Web Application</h4>
         <div id="image">
          <%= image_tag("app.jpg",:size => "300x200" ) %>
@@ -89,23 +95,46 @@
     <span> 
       <h3>Featured Of Project</h3>
     </span>
-     <%= image_tag("topbaner.jpg", :size => "600x300")  %>
-     <%= image_tag("shopper.jpg", :size => "600x300")  %> 
-     <%= image_tag("weeknews.jpg", :size => "600x300")  %> 
-     <%= image_tag("cyncake.jpg", :size => "600x425")  %>
+    <div class="row">
+      <div class="col">
+       <div id="image">
+       <%= image_tag("topbaner.jpg", :size => "600x300")  %>
+       </div>
+      </div>
+      <div class="col">
+       <div id="image">
+       <%= image_tag("shopper.jpg", :size => "600x300")  %> 
+       </div>
+      </div>
+      <div class="col">
+       <div id="image">
+        <%= image_tag("weeknews.jpg", :size => "600x300")  %> 
+        </div>
+      </div>
+      <div class="col">
+       <div id="image">
+        <%= image_tag("cyncake.jpg", :size => "600x425")  %>
+        </div>
+      </div>
+    </div>
  </div>
 </div>
 
+<div class="contact1">
 <div class="container">
-  <div class="form2">
+<h5>CONTACT US</h5>
+  <div class="form">
     <form action="https://formspree.io/phil9231@gmail.com"
     method="POST">
     <input type="text" name="Full Name" placeholder="Full Name "><br>
     <input type="text" name="Phone" placeholder="Phone"><br>
     <input type="email" name="email" placeholder="Email"><br>
     <textarea name="message" placeholder="Your message"></textarea>
-    <input type="submit" value="Submit" style="color:green; font-size:20px;">
+    <span>
+    <input type="submit" value="Submit" style="color:green; font-size:30px; font-family:'Abril Fatface', cursive;background: none;
+  "></span>
   </form> 
+</div>
 </div>
 </div>
 
@@ -115,23 +144,11 @@
 
 
  <!-- Footer -->
- <footer>
-   <div class="row">
-    <div class="col s4">
-     <a class="waves-effect waves-light btn">IG</a>
-     <a class="waves-effect waves-light btn">Tweeter</a>
-     <a class="waves-effect waves-light btn">PROJECTS</a>
-     <a class="waves-effect waves-light btn-large">Copy Right</a>
-
-   </div>
-   <div class="col s8">
-     <li><a class="waves-effect waves-light btn">HOME</a></li>
-     <li><a class="waves-effect waves-light btn">ABOUT</a></li>
-     <li><a class="waves-effect waves-light btn">PROJECTS</a></li>
-     <li><a class="waves-effect waves-light btn-large">CONTACT</a></li>
-
-   </div>
- </div>
+<footer>
+      <a href="">IG</a>
+      <a href="">TWEETER</a>
+      <a href="">COPY RIGHT@ 2017 By PHILCO MICHEL</a>
+      <a href=""></a>   
 </footer>
 
 
