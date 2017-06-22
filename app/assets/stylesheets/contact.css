@@ -10,6 +10,7 @@ h5{
 }
 .form{
 	margin-top: 85px;
+	margin-bottom: 5em;
 	background: black;
 	margin-right: 25%;
 	margin-left: 25%;
@@ -26,4 +27,11 @@ font-family: 'Abril Fatface', cursive;
 
 .form span{
 	background: none;
+}
+
+
+
+/*contact page css below*/
+.wrp{
+	text-align: center;
 }

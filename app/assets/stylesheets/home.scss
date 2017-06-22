@@ -60,9 +60,11 @@ transform: rotateY(45deg);
   padding-right: 45px;
   text-align: center;
   padding-bottom:15px;
+  padding-top: 45px;
 }
 .clearfix a i span{
   padding-right: 45px;
+  margin-top: 25px;
 }
 /*sec-section*/
 
@@ -75,7 +77,7 @@ transform: rotateY(45deg);
 #main-sect p {
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: white;
   font-family: sans-serif;
 }
 /*featured of project css*/
@@ -163,6 +165,20 @@ footer a{
 
 
 @media(max-width: 1200px) {
+  .intro-header { 
+  margin-top: -15.5px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    background: url('topbaner.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height:9  80px;
+}
+.nav-wrapper{
+
+  display: center !important;
+}
+  
+
   .bg-overlay h1{
   padding-left: 95px;
   color:#043227;
@@ -181,7 +197,7 @@ perspective: 1600px;
   }
   .content-section-a {
     
-    height: 2200px;
+    height: 2400px;
   }
 
   .col{
@@ -255,6 +271,12 @@ padding-bottom: 25px;
 }
 .trans{
   margin-top: 100px;
+}
+.form{
+  margin-top: 95px;
+  margin-bottom: 5em;
+  background: black;
+  margin-right: 25%;
 }
 }
 
