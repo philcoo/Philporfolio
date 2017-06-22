@@ -166,19 +166,16 @@ footer a{
 
 @media(max-width: 1200px) {
   .intro-header { 
-  margin-top: -15.5px;
-    padding-top: 50px; 
+    padding-top: 2px; 
     padding-bottom: 50px;
-    background: url('topbaner.jpg') no-repeat center center fixed;
+    background: url('topbaner.jpg') no-repeat center;
     background-size: cover;
-    height:9  80px;
+    height:980px;
 }
 .nav-wrapper{
-
   display: center !important;
 }
   
-
   .bg-overlay h1{
   padding-left: 95px;
   color:#043227;
@@ -196,7 +193,6 @@ perspective: 1600px;
     margin:5px, 0px, 5px, 0px;
   }
   .content-section-a {
-    
     height: 2400px;
   }
 
@@ -205,6 +201,7 @@ perspective: 1600px;
     margin:5px, 0px, 5px, 0px;
   }
   .fea-proj{
+    margin-top: 50px fixed;
    text-align: center;
    padding-bottom: 55px;
    background: white;
@@ -212,6 +209,7 @@ perspective: 1600px;
   
   .fea-proj col{
    padding-bottom: 15px;
+   
   }
 
 
@@ -255,8 +253,9 @@ padding-top: 180px;
   
 }
 .intro-message h4{
-  color: red;
-font-size: 45px;
+  color: #820303;
+font-size: 55px;
+font-family: bold;
 padding-bottom: 25px;
 
 }
